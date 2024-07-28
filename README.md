@@ -21,7 +21,13 @@ This repository contains a case study on a brewery database by location, where y
   cd ~/bees-data-engineering-breweries-case
 ```
 **Start the Docker containers:**
+</br>
 
+
+**⚠️ Warning:**
+If you are running this project on Windows using VS Code, ensure that the `start_airflow.sh` file is set to LF (Line Feed) line endings to avoid errors.
+
+</br>
 ```bash
 docker-compose up -d
 ```

@@ -1,6 +1,6 @@
 # Summary
 - [Introduction](#introduction)
-- [Step-by-Step Instructions Docker](#step-by-step-instructions)
+- [Step-by-Step Instructions Docker](#step-by-step-instructions-docker)
 
 ## Introduction
 This repository contains a case study on a brewery database by location, where you can examine the entire data engineering workflow. The following tools were used:
@@ -13,7 +13,7 @@ This repository contains a case study on a brewery database by location, where y
 - <img src="https://img.icons8.com/?size=100&id=WHRLQdbEXQ16&format=png&color=000000" alt="GCP" width="25" style="vertical-align: middle;"/>  GCP
 
 
-# Step-by-Step Instructions Docker
+## Step-by-Step Instructions Docker
 **Navigate to the project directory:**
 
 ```bash

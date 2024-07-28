@@ -18,7 +18,7 @@ This repository contains a case study on a brewery database by location, where y
 **Navigate to the project directory:**
 
 ```bash
-  cd ~/www/bees-data-engineering-breweries-case
+   cd ~/bees-data-engineering-breweries-case
 ```
 **Start the Docker containers:**
 

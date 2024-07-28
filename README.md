@@ -1,7 +1,8 @@
 # Summary
 - [Introduction](#introduction)
 - [Step-by-Step Instructions Docker](#step-by-step-instructions-docker)
-
+- [Steps to Start Airflow Without Example DAGs](#steps-to-start-airflow-without-example-dags)
+</br></br></br></br></br></br>
 ## Introduction
 This repository contains a case study on a brewery database by location, where you can examine the entire data engineering workflow. The following tools were used:
 
@@ -12,7 +13,7 @@ This repository contains a case study on a brewery database by location, where y
 - <img src="https://img.icons8.com/?size=100&id=13441&format=png&color=000000" alt="Python" width="25" style="vertical-align: middle;"/>  Python for API requests
 - <img src="https://img.icons8.com/?size=100&id=WHRLQdbEXQ16&format=png&color=000000" alt="GCP" width="25" style="vertical-align: middle;"/>  GCP
 
-
+</br></br></br></br></br></br>
 ## Step-by-Step Instructions Docker
 **Navigate to the project directory:**
 
@@ -54,12 +55,37 @@ airflow users create \
 ```bash
 exit
 ```
-**Stop and remove the Docker containers:**
+
+**How to Stop and remove the Docker containers:**
 you can stop and remove the containers:
 
 ```bash
 docker-compose down
 ```
+</br></br></br></br></br></br>
+## Steps to Start Airflow Without Example DAGs**
+**Access the Airflow Container:**
+```bash
+docker exec -it bees-data-engineering-breweries-case-airflow-1 sh
+```
+**Edit the Airflow Configuration File:**
+```bash
+vi /opt/airflow/airflow.cfg
+```
+**Disable the Example DAGs manually or with sed commandline:**
+Find the line that says load_examples = True and change it to load_examples = False.
+```bash
+sed -i 's/load_examples = True/load_examples = False/' /opt/airflow/airflow.cfg
+```
+**Restart Airflow:**
+
+```bash
+exit
+docker-compose restart
+```
+
+
+
 
 
 

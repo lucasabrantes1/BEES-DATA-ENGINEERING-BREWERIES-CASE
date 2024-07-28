@@ -20,6 +20,13 @@ This repository contains a case study on a brewery database by location, where y
 ```bash
    cd ~/bees-data-engineering-breweries-case
 ```
+</br>
+
+
+**⚠️ Warning:**
+If you are running this project on Windows using VS Code, ensure that the `start_airflow.sh` file is set to LF (Line Feed) line endings to avoid errors.
+
+</br>
 **Start the Docker containers:**
 
 ```bash

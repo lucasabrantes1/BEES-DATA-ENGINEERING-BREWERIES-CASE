@@ -75,25 +75,34 @@ docker-compose down
 ```bash
 docker exec -it bees-data-engineering-breweries-case-airflow-1 sh
 ```
+**Find the Airflow Configuration File:**
+```bash
+find / -name "airflow.cfg"
+```
 **Edit the Airflow Configuration File:**
 ```bash
-vi /opt/airflow/airflow.cfg
+vi /path/to/airflow.cfg
 ```
-**Disable the Example DAGs manually or with sed commandline:**
-Find the line that says load_examples = True and change it to load_examples = False.
+**Disable the Example DAGs manually or with sed command line:**
 ```bash
-sed -i 's/load_examples = True/load_examples = False/' /opt/airflow/airflow.cfg
+sed -i 's/load_examples = True/load_examples = False/' /path/to/airflow.cfg
 ```
-**Restart Airflow:**
 
+**Restart Airflow:**
 ```bash
 exit
-docker-compose restart
+docker restart bees-data-engineering-breweries-case-airflow-1
 ```
 
 
+**Re-enable the Example DAGs:**
+</br>
+If you want to re-enable the example DAGs, change load_examples = False back to load_examples = True.
 
-
-
-
+```bash
+docker exec -it bees-data-engineering-breweries-case-airflow-1 sh
+sed -i 's/load_examples = False/load_examples = True/' /path/to/airflow.cfg
+exit
+docker restart bees-data-engineering-breweries-case-airflow-1
+```
 

@@ -18,9 +18,8 @@ This repository contains a case study on a brewery database by location, where y
 **Navigate to the project directory:**
 
 ```bash
-  cd ~/bees-data-engineering-breweries-case
+   cd ~/bees-data-engineering-breweries-case
 ```
-**Start the Docker containers:**
 </br>
 
 
@@ -28,6 +27,8 @@ This repository contains a case study on a brewery database by location, where y
 If you are running this project on Windows using VS Code, ensure that the `start_airflow.sh` file is set to LF (Line Feed) line endings to avoid errors.
 
 </br>
+**Start the Docker containers:**
+
 ```bash
 docker-compose up -d
 ```
